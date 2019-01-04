@@ -1,0 +1,20 @@
+@import "../page-variables";
+
+// ===============================
+//
+// HEADER Color
+//
+// ===============================
+.Header--standard {
+  background: #71cee3;
+}
+
+// ===============================
+//
+// Overwrite Bootstrap Navigation
+//
+// ===============================
+.navbar-fixed-top {
+  max-width: $page--width-max;
+  margin: 0 auto;
+}

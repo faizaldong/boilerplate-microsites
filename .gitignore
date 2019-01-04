@@ -1,0 +1,7 @@
+.sass-cache/
+node_modules/
+yarn.lock
+package-lock.json
+.idea/
+.env
+.DS_Store

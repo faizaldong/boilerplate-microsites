@@ -1,0 +1,72 @@
+block variables
+
+-
+  var imageFolder = '/'+publicFolder+'/images',
+      cssFolder = '/'+publicFolder+'/css',
+      jsFolder = '/'+publicFolder+'/js',
+      fileFolder = '/'+publicFolder+'/files',
+      timeTag = Math.round(Date.now()/1800000);
+
+doctype html
+
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(content="IE=edge,chrome=1,chrome=1", "http-equiv"="X-UA-Compatible")
+    meta(charset="utf-8")
+    meta(content="yes", name="apple-mobile-web-app-capable")
+    block head
+
+    block css
+    
+
+  block body
+  block javascript
+  block postcontent
+  script(async src="https://www.googletagmanager.com/gtag/js?id=UA-109150669-1")
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-109150669-1');
+
+  //-/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/
+  //-
+  //- GOOGLE REMARKETING CODE (ALL PAGES)
+  //-
+  //-/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/
+  script(type="text/javascript").
+      /* <![CDATA[ */
+      var google_conversion_id = 862262706;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+
+  script(type="text/javascript", src="//www.googleadservices.com/pagead/conversion.js")
+
+  noscript.
+      <div style="display:inline;">
+          <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/862262706/?guid=ON&amp;script=0"/>
+      </div>
+
+  //-/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/
+  //-
+  //- FACEBOOK PIXEL PAGE VIEW (ALL PAGES)
+  //-
+  //-/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/
+  script.
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '785264171627427');
+      fbq('track', 'PageView');
+
+  noscript.
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=785264171627427&ev=PageView&noscript=1" />

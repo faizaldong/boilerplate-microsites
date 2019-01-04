@@ -1,0 +1,29 @@
+extends layout
+include ./partials/header/header
+
+block variables
+
+block head
+
+block css
+  link(rel='stylesheet', href!= cssFolder + '/bootstrap.css')
+  link(rel='stylesheet', href!= cssFolder + '/template.css?v=#{timeTag}')
+  link(rel='stylesheet', href!= cssFolder + '/style.css?v=#{timeTag}')
+
+block javascript
+  script(src!= jsFolder + "/jquery.3.3.1.js")
+  script(src!= jsFolder + "/bootstrap.min.js")
+  script(src!= jsFolder + "/script.min.js?v=#{timeTag}")
+
+block body
+  body
+    .Page
+      p safasd
+      p safasd
+      p safasd
+      p safasd
+      h1 sadfasd
+      +header
+
+
+block postcontent
