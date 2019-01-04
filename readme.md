@@ -26,7 +26,7 @@ Run:
 $ grunt rename
 ```
 
-# Run existing project
+# Run your project
 Run:
 ```sh
 $ PROJECT=projectname grunt
